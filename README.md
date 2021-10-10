@@ -3,12 +3,10 @@
 
 Used to evaluate the speed of different method when limiting the number of concurrent tasks
  
-根據目前的測試結果第2種方法是最好的<br>
-雖然網路上很多文章都使用SemaphoreSlim的方法，但根據測試結果他非常緩慢，請不要使用<br>
-請不要使用第三種方法(Parallel.ForEach)，因為根據測試結果有可能Task不會被全部執行
+根據目前的測試結果第1種方法是最好的<br>
+According to the test results so far, the first method is the best.<br>
 
-According to the test results so far, the second method is the best.<br>
-Although many articles on the web use SemaphoreSlim's method, it is very slow according to test results, please do not use it.<br>
-Do not use the third method (parallel.foreach) because it is possible that the Task will not be fully executed based on the test result.
+![Result](https://user-images.githubusercontent.com/33422418/136713293-428a7c37-9fc0-44d3-8bef-205a8df73032.png)
 
-![Result](https://user-images.githubusercontent.com/33422418/136525185-c605011d-5755-4f6b-a899-0d9a5d02f7c0.png)
+## 特別感謝 / Special thanks
+Rurido
